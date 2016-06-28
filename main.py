@@ -23,7 +23,7 @@ def login():
             else:
                 return render_template('login.html', state="未登陆")
     else:
-       return render_template('login.html', state="未登陆")
+        return render_template('login.html', state="未登陆")
 
 if __name__ == '__main__':
     app.run(debug=True)
