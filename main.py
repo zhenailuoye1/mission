@@ -24,9 +24,9 @@ def login():
         with get_db() as db:
             cursor = db.cursor()
             cursor.execute('SELECT password FROM account WHERE name = ?',(user_name,))
-            pw = cursor.fetchone()
+            account_pw = cursor.fetchone()
             try:
-                if password == pw[0]:
+                if password == account_pw[0]:
                     return render_template('login.html', state="登陆成功")
             except TypeError:
                 return render_template('login.html', state="用户名不存在")
