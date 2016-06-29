@@ -21,13 +21,16 @@ def login():
         user_name = request.form['user_name']
         password = request.form['password']
         print(request.form['user_name'])
-        db =  get_db()
-        cursor = db.cursor()
-        cursor.execute('SELECT password FROM account WHERE name = ?',(user_name,))
-        pw = cursor.fetchone()
-        if password == pw:
-            return render_template('login.html', state="登陆成功")
-        return render_template('login.html', state="用户名或者密码错误")
+        with get_db() as db:
+            cursor = db.cursor()
+            cursor.execute('SELECT password FROM account WHERE name = ?',(user_name,))
+            pw = cursor.fetchone()
+            try:
+                if password == pw[0]:
+                    return render_template('login.html', state="登陆成功")
+            except TypeError:
+                return render_template('login.html', state="用户名不存在")
+            return render_template('login.html', state="密码错误")
     else:
         return render_template('login.html', state="未登陆")
 
