@@ -27,8 +27,8 @@ def login():
             cursor.execute('SELECT password FROM account WHERE name = ?',(form_un,))
             account_pw = cursor.fetchone()
             if account_pw and account_pw[0] == form_pw:
-                return "登陆成功"
-            return "用户名或密码错误"
+                return "ok"
+            return "error"
     else:
         return render_template('login.html')
 
