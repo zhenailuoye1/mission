@@ -21,6 +21,7 @@ $(function () {
             },
             success: function (data,Status) {
                 if (data == 'ok') {
+                    alert('登陆成功！跳转到首页中...')
                     window.location.href = "/";
                 }
                 else {
