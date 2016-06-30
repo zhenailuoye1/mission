@@ -1,5 +1,3 @@
-alert('请输入用户名和密码')
-
 $(function () {
     $('#btn-login').click(function () {
         var name = $('input[name="user_name"]').val();
@@ -19,13 +17,13 @@ $(function () {
                 user_name: name,
                 password: pw,
             },
-            success: function (data,Status) {
+            success: function (data, Status) {
                 if (data == 'ok') {
                     alert('登陆成功！跳转到首页中...')
                     window.location.href = "/";
                 }
                 else {
-                alert("用户名或密码错误");
+                    alert("用户名或密码错误");
                 }
             }
         })
