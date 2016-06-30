@@ -27,10 +27,10 @@ def login():
             cursor.execute('SELECT password FROM account WHERE name = ?',(form_un,))
             account_pw = cursor.fetchone()
             if account_pw and account_pw[0] == form_pw:
-                return render_template('login.html', state="登陆成功")
-            return render_template('login.html', state="用户名或密码错误")
+                return "登陆成功"
+            return "用户名或密码错误"
     else:
-        return render_template('login.html', state="未登陆")
+        return render_template('login.html')
 
 @app.route('/account')
 def account():
