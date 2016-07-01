@@ -1,6 +1,8 @@
 import sqlite3
 from flask import *
+from flask_script import Manager
 app = Flask(__name__)
+manager = Manager(app)
 
 def connect_db():
     return sqlite3.connect('database.db')
@@ -37,4 +39,4 @@ def account():
     return render_template('account.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    manager.run()
