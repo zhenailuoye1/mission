@@ -11,8 +11,9 @@ div.header div.logo {
 div.body {
   width: main-width;
   height: 500px;
-  background-color: red;
   padding-top: 100px;
+  background-image: url(../files/img/login_bg.jpg) no-repeat center fixed;
+  background-size: contain;
 }
 
 div.body div.login {
@@ -36,6 +37,11 @@ div.body div.login #btn-login {
   background-color: red;
   font-family: "Microsoft Yahei";
   color: white;
+}
+
+div.foot {
+  width: main-width;
+  height: 100px;
 }
 
 
