@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="zh">
-    <head>
-        <title>登陆</title>
-        <meta charset="utf-8">
-		<link rel="stylesheet" href="static/lib/css/bootstrap.min.css" >
-		<link rel="stylesheet" href="static/css/login.css" >
-        <script type="text/javascript" src="static/lib/js/jquery-3.0.0.min.js"></script>
-        <script type="text/javascript" src="static/js/login.js"></script>
-    </head>
-    <body>
-        <div class="header">
+
+<head>
+    <title>登陆</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="static/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/login.css">
+    <script type="text/javascript" src="static/lib/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="static/js/login.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/">
             <div class="logo"></div>
+        </a>
+        <div class="welcome">
+            <h2>欢迎登录</h2>
         </div>
-        <div class="body">
-            <div class="login">
-                <div class="login-header">
-                    <h3>跳虫会员</h3>
-                    <a href="/account">没有账号？立即注册吧！</a>
-                </div>
-                <form>
-                    <input type="text" name="user_name" class="form-control" placeholder="用户名">
-                    <input type="password" name="password" class="form-control" placeholder="密码">
-                    <input type="button" class="btn btn-default" value="登陆" id="btn-login"></button>
-                </form>
+    </div>
+    <div class="body">
+        <div class="login">
+            <div class="login-header">
+                <h3>跳虫会员</h3>
+                <a href="/account">立即注册</a>
             </div>
+            <form>
+                <input type="text" name="user_name" class="form-control" placeholder="用户名">
+                <input type="password" name="password" class="form-control" placeholder="密码">
+                <input type="button" class="btn btn-default" value="登录" id="btn-login"></button>
+            </form>
         </div>
-        <div class="footer">
-            <div class="links">
-                <a href="#">关于我们</a>
-                <a href="#">联系我们</a>
-                <a href="#">商家入驻</a>
-                <a href="#">广告服务</a>
-                <a href="#">友情链接</a>
-                <a href="#">销售联盟 </a>
-                <a href="#">跳虫社区</a>
-                <a href="#">人才招聘</a>
-            </div>
+    </div>
+    <div class="footer">
+        <div class="links">
+            <a href="#">关于我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">人才招聘</a>
+            <a href="#">商家入驻</a>
+            <a href="#">广告服务</a>
+            <a href="#">手机京东</a>
+            <a href="#">友情链接</a>
+            <a href="#">销售联盟</a>
+            <a href="#">跳虫社区</a>
+            <a href="#">跳虫公益</a>
+            <a href="#">English Site</a>
         </div>
-    </body>
+        <div class="copyright">Copyright©2004-2016 京东JD.com 版权所有</div>
+    </div>
+</body>
+
 </html>
