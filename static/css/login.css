@@ -39,7 +39,7 @@ div.body {
       div.body div.login div.login-header a {
         float: right;
         color: red; }
-    div.body div.login input {
+    div.body div.login div.input-group {
       margin-bottom: 20px; }
     div.body div.login #btn-login {
       width: 260px;
