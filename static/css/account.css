@@ -1,36 +1,31 @@
 div.header {
-  width: 100%;
-  min-width: 1000px;
+  width: main-width;
   height: 50px; }
   div.header div.logo {
     width: 50px;
     height: 50px; }
 
 div.body {
-  width: 100%;
-  min-width: 1000px;
+  width: main-width;
   height: 500px;
-  padding-top: 100px;
-  background-color: red; }
-  div.body div.login {
+  background-color: red;
+  padding-top: 100px; }
+  div.body div.register {
     width: 300px;
     height: 300px;
     background-color: white;
     margin: auto;
     padding: 20px; }
-    div.body div.login div.login-header {
-      height: 100px; }
-    div.body div.login input {
+    div.body div.register input {
       margin-bottom: 20px; }
-    div.body div.login #btn-login {
+    div.body div.register #btn-register {
       width: 260px;
       background-color: red;
       font-family: "Microsoft Yahei";
       color: white; }
 
 div.foot {
-  width: 100%;
-  min-width: 1000px;
+  width: main-width;
   height: 100px; }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=account.css.map */
