@@ -1,0 +1,11 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es3"
+    },
+    "exclude": [
+        "node_modules",
+        "wwwroot"
+    ]
+}

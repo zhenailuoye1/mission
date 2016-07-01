@@ -1,0 +1,28 @@
+{
+  "name": "mission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "tslint": "^3.13.0",
+    "typescript": ">1.8.0",
+    "gulp": "*",
+    "gulp-cli": "*",
+    "gulp-typescript": "*",
+    "gulp-sass": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycdeng/mission.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycdeng/mission/issues"
+  },
+  "homepage": "https://github.com/ycdeng/mission#readme"
+}
