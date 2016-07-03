@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/login.css">
     <script type="text/javascript" src="static/lib/js/jquery-3.0.0.min.js"></script>
+    <script src="static/lib/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="static/js/login.js"></script>
+
 </head>
 
 <body>
@@ -23,15 +25,31 @@
         <div class="login">
             <div class="login-header">
                 <h3>跳虫会员</h3>
-                <a href="/account">立即注册</a>
+                <a href="/account">忘记密码？</a>
+                <ul id="myTab" class="nav nav-tabs" style="clear: both">
+                    <li class="active"><a href="#login_tab" data-toggle="tab">登录</a>
+                    </li>
+                    <li><a href="#register_tab" data-toggle="tab">注册</a></li>
+                </ul>
             </div>
-            <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            <input type="text" name="user_name" class="form-control" placeholder="用户名">
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="login_tab">
+                    <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input type="text" name="user_name" class="form-control" placeholder="用户名">
+                    </div>
+                    <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input type="password" name="password" class="form-control" placeholder="密码">
+                    </div>
+                    <input type="button" class="btn btn-default" value="登录" id="btn-login"></button>
+                </div>
+                <div class="tab-pane fade" id="register_tab">
+                    <input type="text" name="re_email" class="form-control" placeholder="邮箱">
+                    <input type="text" name="re_user_name" class="form-control" placeholder="用户名">
+                    <input type="password" name="re_password" class="form-control" placeholder="密码">
+                    <input type="password" name="re_confirm" class="form-control" placeholder="确认密码">
+                    <input type="submit" class="btn btn-default" value="注册" id="btn-register"></button>
+                </div>
             </div>
-            <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            <input type="password" name="password" class="form-control" placeholder="密码">
-            </div>
-            <input type="button" class="btn btn-default" value="登录" id="btn-login"></button>
         </div>
     </div>
     <div class="footer">
@@ -48,7 +66,7 @@
             <a href="#">跳虫公益</a>
             <a href="#">English Site</a>
         </div>
-        <div class="copyright">Copyright©2004-2016 京东JD.com 版权所有</div>
+        <div class="copyright">Copyright©2004-2016 跳虫TC.com 版权所有</div>
     </div>
 </body>
 
