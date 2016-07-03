@@ -1,3 +1,51 @@
+div.header {
+    height: 50px;
+    width: 1000px;
+    margin: auto;
+    padding: 7px;
+}
+
+div.body {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+}
+
 div.sidebar {
     width: 86px;
+    float: left;
+    margin: 7px;
+}
+
+div.commodity {
+    width: 900px;
+    height: 500px;
+    margin-left: 100px;
+
+    background-color: lightblue;
+}
+
+div.com_main {
+    width: 900px;
+    height: 410px;
+    background-color: lightgoldenrodyellow;
+}
+
+div.com_main ul {
+    list-style: none;
+    padding: 0px;
+}
+
+div.com_main ul li {
+    width: 168px;
+    height: 410px;
+    margin-left: 10px;
+    background-color: orange;
+    float: left;
+}
+
+div.img {
+    width: 168px;
+    height: 168px;
+    background-color: gray;
 }
