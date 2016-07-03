@@ -1,36 +1,67 @@
+body {
+  font-family: "Microsoft Yahei"; }
+
 div.header {
-  width: 100%;
-  min-width: 1000px;
-  height: 50px; }
+  width: 1000px;
+  height: 50px;
+  margin: 20px auto 20px auto; }
   div.header div.logo {
-    width: 50px;
-    height: 50px; }
+    width: 170px;
+    height: 60px;
+    background-image: url(/static/img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left; }
+  div.header div.welcome {
+    overflow: hidden;
+    margin-left: 200px; }
 
 div.body {
-  width: 100%;
-  min-width: 1000px;
+  width: 1000px;
   height: 500px;
   padding-top: 100px;
-  background-color: red; }
+  background-image: url(/static/img/login_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto; }
   div.body div.login {
     width: 300px;
     height: 300px;
     background-color: white;
-    margin: auto;
+    margin-left: 600px;
     padding: 20px; }
     div.body div.login div.login-header {
       height: 100px; }
-    div.body div.login input {
+      div.body div.login div.login-header h3 {
+        margin-top: 0;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        float: left; }
+      div.body div.login div.login-header a {
+        float: right;
+        color: red; }
+    div.body div.login div.input-group {
       margin-bottom: 20px; }
     div.body div.login #btn-login {
       width: 260px;
       background-color: red;
-      font-family: "Microsoft Yahei";
       color: white; }
 
-div.foot {
-  width: 100%;
-  min-width: 1000px;
-  height: 100px; }
+div.footer {
+  margin: auto;
+  margin-top: 40px;
+  width: 1000px;
+  height: 100px;
+  text-align: center; }
+  div.footer a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #666;
+    text-decoration: none; }
+  div.footer a:hover {
+    color: #E4393C;
+    text-decoration: underline; }
+  div.footer div.copyright {
+    color: #666;
+    line-height: 400%; }
 
 /*# sourceMappingURL=login.css.map */
