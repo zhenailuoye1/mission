@@ -2,7 +2,7 @@ body {
   font-family: "Microsoft Yahei"; }
 
 div.header {
-  width: 1000px;
+  width: 100%;
   height: 50px;
   margin: 20px auto 20px auto; }
   div.header div.logo {
@@ -17,21 +17,24 @@ div.header {
     margin-left: 200px; }
 
 div.body {
-  width: 1000px;
+  width: 100%;
   height: 500px;
   padding-top: 100px;
   background-image: url(/static/img/login_bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center;
+  background-color: #be2527;
   margin: auto; }
   div.body div.login {
     width: 300px;
     height: 300px;
     background-color: white;
-    margin-left: 600px;
+    margin: auto;
+    margin-right: 20%;
+    opacity: 0.95;
     padding: 20px; }
     div.body div.login div.login-header {
-      height: 100px; }
+      height: 80px; }
       div.body div.login div.login-header h3 {
         margin-top: 0;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
@@ -40,8 +43,15 @@ div.body {
         float: right;
         color: red; }
     div.body div.login div.input-group {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-top: 20px; }
     div.body div.login #btn-login {
+      width: 260px;
+      background-color: red;
+      color: white; }
+    div.body div.login #register_tab input.form-control {
+      margin-bottom: 4px; }
+    div.body div.login #btn-register {
       width: 260px;
       background-color: red;
       color: white; }
@@ -49,7 +59,7 @@ div.body {
 div.footer {
   margin: auto;
   margin-top: 40px;
-  width: 1000px;
+  width: 100%;
   height: 100px;
   text-align: center; }
   div.footer a {
@@ -63,5 +73,3 @@ div.footer {
   div.footer div.copyright {
     color: #666;
     line-height: 400%; }
-
-/*# sourceMappingURL=login.css.map */
