@@ -1,121 +1,112 @@
-<!DOCTYPE html>
-<html lang="zh">
-
 <head>
     <title>主页</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="static/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/main.css">
-    <script type="text/javascript" src="/static/js/main.js"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <script type="text/javascript" src="/static/js/index.js"></script>
 </head>
+{% extends "layout.html" %} {% block body %}
+<div class="header">
+    <a href="/login">登陆</a>
 
-<body>
-    <div class="header">
-        <a href="/login">登陆</a>
-        
-        <button type="button" class="btn btn-default">搜索</button>
-        <input type="text" class="form-control" placeholder="商品名称">
-        
+    <button type="button" class="btn btn-default">搜索</button>
+    <input type="text" class="form-control" placeholder="商品名称">
+
+</div>
+
+<div class="body">
+    <div class="sidebar">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active">
+                <a href="#">商品管理</a></li>
+            <li><a href="#">用户管理</a></li>
+            <li><a href="#">订单管理</a></li>
+        </ul>
     </div>
 
-    <div class="body">
-        <div class="sidebar">
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active">
-                    <a href="#">商品管理</a></li>
-                <li><a href="#">用户管理</a></li>
-                <li><a href="#">订单管理</a></li>
+    <div class="commodity">
+        <div class="com_main">
+            <ul>
+                <li>
+                    <div class="goods">
+                        <a href="">
+                            <img src="\static\img\001.jpg" alt="" class="img-thumbnail">
+                        </a>
+                        <div class="desc">
+                            <h4><b>英式牛排</b></h4>
+                            <h5>售价：<span>50</span>元</h5>
+                            <p>来自英国的美味，你值得一试！</p>
+                            <button type="button" class="btn btn-default">编辑</button>
+                            <button type="button" class="btn btn-default">删除</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="goods">
+                        <a href="">
+                            <img src="\static\img\002.jpg" alt="" class="img-thumbnail">
+                        </a>
+                        <div class="desc">
+                            <h4><b>黑科技可乐</b></h4>
+                            <h5>售价：<span>10</span>元</h5>
+                            <p>神马可口可乐、百事乐乐弱爆了！来自硅谷的创新可乐让你Hi~翻全场！</p>
+                            <button type="button" class="btn btn-default">编辑</button>
+                            <button type="button" class="btn btn-default">删除</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="goods">
+                        <a href="">
+                            <img src="\static\img\003.jpg" alt="" class="img-thumbnail">
+                        </a>
+                        <div class="desc">
+                            <h4><b>火影饼干</b></h4>
+                            <h5>售价：<span>15</span>元</h5>
+                            <p>吃上一口，体验当海贼王的感觉！</p>
+                            <button type="button" class="btn btn-default">编辑</button>
+                            <button type="button" class="btn btn-default">删除</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="goods">
+                        <a href="">
+                            <img src="\static\img\004.jpg" alt="" class="img-thumbnail">
+                        </a>
+                        <div class="desc">
+                            <h4><b>竹子蛋糕</b></h4>
+                            <h5>售价：<span>100</span>元</h5>
+                            <p>中国国宝的最爱！享受国宝级待遇！</p>
+                            <button type="button" class="btn btn-default">编辑</button>
+                            <button type="button" class="btn btn-default">删除</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="goods">
+                        <a href="">
+                            <img src="\static\img\005.jpg" alt="" class="img-thumbnail">
+                        </a>
+                        <div class="desc">
+                            <h4><b>葡式蛋饼</b></h4>
+                            <h5>售价：<span>88</span>元</h5>
+                            <p>体味不一样的葡式蛋挞！</p>
+                            <button type="button" class="btn btn-default">编辑</button>
+                            <button type="button" class="btn btn-default">删除</button>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
-
-        <div class="commodity">
-            <div class="com_main">
-                <ul>
-                    <li>
-                        <div class="goods">
-                            <a href="">
-                                <img src="\static\img\001.jpg" alt="" class="img-thumbnail">
-                            </a>
-                            <div class="desc">
-                                <h4><b>英式牛排</b></h4>
-                                <h5>售价：<span>50</span>元</h5>
-                                <p>来自英国的美味，你值得一试！</p>
-                                <button type="button" class="btn btn-default">编辑</button>
-                                <button type="button" class="btn btn-default">删除</button>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="goods">
-                            <a href="">
-                                <img src="\static\img\002.jpg" alt="" class="img-thumbnail">
-                            </a>
-                            <div class="desc">
-                                <h4><b>黑科技可乐</b></h4>
-                                <h5>售价：<span>10</span>元</h5>
-                                <p>神马可口可乐、百事乐乐弱爆了！来自硅谷的创新可乐让你Hi~翻全场！</p>
-                                <button type="button" class="btn btn-default">编辑</button>
-                                <button type="button" class="btn btn-default">删除</button>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="goods">
-                            <a href="">
-                                <img src="\static\img\003.jpg" alt="" class="img-thumbnail">
-                            </a>
-                            <div class="desc">
-                                <h4><b>火影饼干</b></h4>
-                                <h5>售价：<span>15</span>元</h5>
-                                <p>吃上一口，体验当海贼王的感觉！</p>
-                                <button type="button" class="btn btn-default">编辑</button>
-                                <button type="button" class="btn btn-default">删除</button>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="goods">
-                            <a href="">
-                                <img src="\static\img\004.jpg" alt="" class="img-thumbnail">
-                            </a>
-                            <div class="desc">
-                                <h4><b>竹子蛋糕</b></h4>
-                                <h5>售价：<span>100</span>元</h5>
-                                <p>中国国宝的最爱！享受国宝级待遇！</p>
-                                <button type="button" class="btn btn-default">编辑</button>
-                                <button type="button" class="btn btn-default">删除</button>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="goods">
-                            <a href="">
-                                <img src="\static\img\005.jpg" alt="" class="img-thumbnail">
-                            </a>
-                            <div class="desc">
-                                <h4><b>葡式蛋饼</b></h4>
-                                <h5>售价：<span>88</span>元</h5>
-                                <p>体味不一样的葡式蛋挞！</p>
-                                <button type="button" class="btn btn-default">编辑</button>
-                                <button type="button" class="btn btn-default">删除</button>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="com_footer">
-                <ul class="pager">
-                    <li><a href="#">&larr; 上一页</a></li>
-                    <li><a href="#">下一页 &rarr;</a></li>
-                </ul>
-            </div>
+        <div class="com_footer">
+            <ul class="pager">
+                <li><a href="#">&larr; 上一页</a></li>
+                <li><a href="#">下一页 &rarr;</a></li>
+            </ul>
         </div>
     </div>
-
-</body>
-
-</html>
+</div>
+{% endblock %}
