@@ -1,112 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+
 <head>
     <title>主页</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/index.css">
-    <script type="text/javascript" src="/static/js/index.js"></script>
 </head>
-{% extends "layout.html" %} {% block body %}
-<div class="header">
-    <a href="/login">登陆</a>
 
-    <button type="button" class="btn btn-default">搜索</button>
-    <input type="text" class="form-control" placeholder="商品名称">
-
-</div>
-
-<div class="body">
-    <div class="sidebar">
-        <ul class="nav nav-pills nav-stacked">
-            <li class="active">
-                <a href="#">商品管理</a></li>
-            <li><a href="#">用户管理</a></li>
-            <li><a href="#">订单管理</a></li>
-        </ul>
-    </div>
-
-    <div class="commodity">
-        <div class="com_main">
-            <ul>
-                <li>
-                    <div class="goods">
-                        <a href="">
-                            <img src="\static\img\001.jpg" alt="" class="img-thumbnail">
-                        </a>
-                        <div class="desc">
-                            <h4><b>英式牛排</b></h4>
-                            <h5>售价：<span>50</span>元</h5>
-                            <p>来自英国的美味，你值得一试！</p>
-                            <button type="button" class="btn btn-default">编辑</button>
-                            <button type="button" class="btn btn-default">删除</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="goods">
-                        <a href="">
-                            <img src="\static\img\002.jpg" alt="" class="img-thumbnail">
-                        </a>
-                        <div class="desc">
-                            <h4><b>黑科技可乐</b></h4>
-                            <h5>售价：<span>10</span>元</h5>
-                            <p>神马可口可乐、百事乐乐弱爆了！来自硅谷的创新可乐让你Hi~翻全场！</p>
-                            <button type="button" class="btn btn-default">编辑</button>
-                            <button type="button" class="btn btn-default">删除</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="goods">
-                        <a href="">
-                            <img src="\static\img\003.jpg" alt="" class="img-thumbnail">
-                        </a>
-                        <div class="desc">
-                            <h4><b>火影饼干</b></h4>
-                            <h5>售价：<span>15</span>元</h5>
-                            <p>吃上一口，体验当海贼王的感觉！</p>
-                            <button type="button" class="btn btn-default">编辑</button>
-                            <button type="button" class="btn btn-default">删除</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="goods">
-                        <a href="">
-                            <img src="\static\img\004.jpg" alt="" class="img-thumbnail">
-                        </a>
-                        <div class="desc">
-                            <h4><b>竹子蛋糕</b></h4>
-                            <h5>售价：<span>100</span>元</h5>
-                            <p>中国国宝的最爱！享受国宝级待遇！</p>
-                            <button type="button" class="btn btn-default">编辑</button>
-                            <button type="button" class="btn btn-default">删除</button>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="goods">
-                        <a href="">
-                            <img src="\static\img\005.jpg" alt="" class="img-thumbnail">
-                        </a>
-                        <div class="desc">
-                            <h4><b>葡式蛋饼</b></h4>
-                            <h5>售价：<span>88</span>元</h5>
-                            <p>体味不一样的葡式蛋挞！</p>
-                            <button type="button" class="btn btn-default">编辑</button>
-                            <button type="button" class="btn btn-default">删除</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+<body>
+    <div class="seller-nav">
+        <div class="nav-content">
+            <div class="mobile-download">
+                <span></span>
+                <a href="#">卖家手机端</a>
+            </div>
+            <a href="#">淘宝首页</a>
         </div>
-        <div class="com_footer">
-            <ul class="pager">
-                <li><a href="#">&larr; 上一页</a></li>
-                <li><a href="#">下一页 &rarr;</a></li>
+    </div>
+    <div class="header">
+        <div class="clearfix">
+            <div class="logo">
+                <a href="/" class="taobao-logo"></a>
+                <a href="#" class="sub-logo"></a>
+            </div>
+        </div>
+        <div class="topnav">
+            <ul class="site-menu">
+                <li class="first"><a href="#">首页</a></li>
+                <li><a href="#">规则中心</a></li>
+                <li><a href="#">安全中心</a></li>
+                <li><a href="#">服务中心</a></li>
+                <li><a href="#">卖家论坛</a></li>
+                <li><a href="#">淘宝大学</a></li>
             </ul>
         </div>
     </div>
-</div>
-{% endblock %}
+
+    <div class="body">
+        <div class="sidebar">
+            <div class="my-app">
+                <span>我的应用</span>
+            </div>
+            <div class="app-list">
+                <ul>
+
+                    <li class="category">
+                        <div class="category-name">
+                            <span class="category-icon">&nbsp;</span> 店铺管理
+                        </div>
+                        <ol class="category-app clearfix">
+                            <li class="common-app">
+                                <a href="#" title="我要开店">我要开店</a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class="category">
+                        <div class="category-name">
+                            <span class="category-icon">&nbsp;</span> 交易管理
+                        </div>
+                        <ol class="category-app clearfix">
+                            <li class="common-app">
+                                <a href="#" title="已卖出的宝贝">已卖出的宝贝</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="评价管理">评价管理</a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class="category">
+                        <div class="category-name">
+                            <span class="category-icon">&nbsp;</span> 物流管理
+                        </div>
+                        <ol class="category-app clearfix">
+                            <li class="common-app">
+                                <a href="#" title="发货">发货</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="物流工具">物流工具</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="物流服务">物流服务</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="我要寄快递">我要寄快递</a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class="category">
+                        <div class="category-name">
+                            <span class="category-icon">&nbsp;</span> 宝贝管理
+                        </div>
+                        <ol class="category-app clearfix">
+                            <li class="common-app">
+                                <a href="#" title="发布宝贝">发布宝贝</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="出售中的宝贝">出售中的宝贝</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="仓库中的宝贝">仓库中的宝贝</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="体检中心">体检中心</a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class="category">
+                        <div class="category-name">
+                            <span class="category-icon">&nbsp;</span> 客户服务
+                        </div>
+                        <ol class="category-app clearfix">
+                            <li class="common-app">
+                                <a href="#" title="退款管理">退款管理</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="售后管理">售后管理</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="举报管理">举报管理</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="咨询回复">咨询回复</a>
+                            </li>
+                        </ol>
+                    </li>
+
+                    <li class="category">
+                        <div class="category-name">
+                            <span class="category-icon">&nbsp;</span> 我的网游交易
+                        </div>
+                        <ol class="category-app clearfix">
+                            <li class="common-app">
+                                <a href="#" title="已卖出的宝贝">已售游戏订单</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="出售的游戏宝贝">出售的游戏宝贝</a>
+                            </li>
+                            <li class="common-app">
+                                <a href="#" title="游戏保证金管理">游戏保证金管理</a>
+                            </li>
+                        </ol>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="hq-goods-area">
+                <div class="hq-goods-con">
+                    <div class="hq-goods-left">
+                        <div class="hq-goods-pos">
+                            <h4>橱窗位</h4>
+                            <p>
+                                <span class="all-num"><span class="gray">总量：</span><span class="red">0</span> </span>
+                                <span class="left-num"><span class="gray">已使用：</span><span class="red">0</span> </span>
+                                <a href="#">查看明细</a>
+                                <a href="#">一键设置</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
